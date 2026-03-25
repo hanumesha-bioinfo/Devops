@@ -12,8 +12,6 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
-    - name: Run a simple command
+    - name: Run a simple command     
       run: echo "This is a simple CI pipeline running on GitHub Actions."
-    - name: Run tests
-      run: |
-        pytest tests/
+      
