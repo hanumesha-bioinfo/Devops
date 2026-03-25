@@ -1,0 +1,19 @@
+name : simple CI pipeline
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Run a simple command
+      run: echo "This is a simple CI pipeline running on GitHub Actions."
+    - name: Run tests
+      run: |
+        pytest tests/
