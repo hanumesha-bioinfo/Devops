@@ -23,3 +23,6 @@ jobs:
 
     - name: step 3
       run: echo "This is step 3."
+
+    - name: build docker image
+      run: docker build -t devops .
